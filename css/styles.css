@@ -1,0 +1,146 @@
+html, body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: relative;
+  width: 70%;
+  /* margin: 45rem auto 0; */
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: left;
+  margin-bottom: 0;
+  opacity: 0;
+  padding-top: 6rem;
+}
+
+p {
+  color: dimgray;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 3.5rem;
+  width: 100%;
+  padding-top: 3.5rem;
+}
+
+.intro-p {
+  opacity: 0;
+}
+
+.btns {
+  position: absolute;
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.mailLink {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border: 1px;
+  border-color: #033dff;
+  border-radius: .5rem;
+  border-style: solid;
+  background-color: #033dff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  padding: 1.4rem 2.05rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: .25rem;
+  filter: drop-shadow(.25rem .25rem .5rem silver);
+  overflow: hidden;
+  transition: all .3s;
+}
+
+button:hover {
+  border-color: #1d51ff;
+  background-color: #1d51ff;
+  filter: drop-shadow(.25rem .5rem .5rem silver);
+  padding-right: 4.5rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.far {
+  font-size: 1.5rem;
+  position: absolute;
+  margin: 3.5rem 12rem;
+  color: white;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.moveright {
+  margin: 3.65rem 13.75rem;
+  opacity: 1;
+}
+
+.memoji {
+  max-width: 5rem;
+  max-height: 5rem;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+.reply-time {
+  opacity: 0;
+  padding-top: 8rem;
+}
+
+.reply-time-bold {
+  font-weight: 600;
+}
+
+.reply-time-text {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.reply-time-text:hover {
+  color: #033dff;
+}
+
+footer {
+  top: 10%;
+  margin: 1rem auto 6rem;
+  width: 70%;
+}
+
+.copyright {
+  color: #5e5e5e;
+  font-size: .8rem;
+}
