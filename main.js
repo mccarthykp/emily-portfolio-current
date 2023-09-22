@@ -1,11 +1,43 @@
 $(document).ready(function() {
-  $("h1").delay(50).animate({
+  $(".h1-primary").delay(2500).animate({
+    marginTop: "-1rem",
+    opacity: "1.0",
+  },
+  550).removeClass('hidden');
+  $(".h1-recommendations").delay(250).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
   550).removeClass('hidden');
 
-  $(".intro-p").delay(250).animate({
+  $(".portrait").delay(2500).animate({
+    opacity: "1.0",
+  },
+  550).removeClass('hidden');
+
+  $(".intro-p").delay(2500).animate({
+    marginTop: "-1rem",
+    opacity: "1.0",
+  },
+  550).removeClass('hidden');
+
+  $(".btns").delay(2500).animate({
+    marginTop: "-1rem",
+    opacity: "1.0",
+  },
+  650).removeClass('hidden');
+
+  $(".primary-footer").delay(2500).animate({
+    opacity: "1.0",
+  },
+  750).removeClass('hidden');
+
+  $(".contact-footer").delay(650).animate({
+    opacity: "1.0",
+  },
+  750).removeClass('hidden');
+
+  $(".back-button").delay(1).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
@@ -17,40 +49,40 @@ $(document).ready(function() {
   },
   550).removeClass('hidden');
 
-  $(".btns").delay(450).animate({
+  $(".buttons-div").delay(550).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
   650).removeClass('hidden');
 
-  $(".reply-time").delay(625).animate({
+  $("#fcf-form").delay(650).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
-  600).removeClass('hidden');
+  750).removeClass('hidden');
 });
 
 // hover(cursor enter, cursor exit)
 // setTimeout delays func exec
 // clearTimeout resets setTimeout upon hover cursor exit
 
-var timer;
+// var timer;
 
-$(".contact-button").hover(
-  function() {
-    timer = setTimeout(function() {
-        $(".far").animate({
-            opacity: "1.0"
-          },
-          100).addClass("moveright");
-      },
-    225);
-  },
-  function() {
-    clearTimeout(timer);
-    $(".far").animate({
-        opacity: "0"
-      },
-    1);
-  }
-);
+// $(".contact-button").hover(
+//   function() {
+//     timer = setTimeout(function() {
+//         $(".far").animate({
+//             opacity: "1.0"
+//           },
+//           100).addClass("moveright");
+//       },
+//     225);
+//   },
+//   function() {
+//     clearTimeout(timer);
+//     $(".far").animate({
+//         opacity: "0"
+//       },
+//     1);
+//   }
+// );

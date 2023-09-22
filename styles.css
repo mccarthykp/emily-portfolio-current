@@ -11,10 +11,19 @@ body {
   width: 100vw;
 }
 
+.noselect {
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 .content {
   position: relative;
   width: 70%;
-  margin: auto;
+  margin: 10rem auto 5rem;
 }
 
 .hidden {
@@ -25,14 +34,36 @@ body {
   color: black;
 }
 
-h1 {
+.heading-portrait-div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.h1-primary {
   color: black;
   font-weight: 700;
   font-size: 5rem;
   text-align: left;
   margin-bottom: 0;
   opacity: 0;
-  padding-top: 6rem;
+  padding: 6rem 2.5rem 0 0;
+}
+
+.portrait {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  margin: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.buttons-div {
+  opacity: 0;
+  padding: 2.5rem 0;
 }
 
 p {
@@ -42,7 +73,7 @@ p {
   text-align: left;
   line-height: 3.5rem;
   width: 100%;
-  padding-top: 3.5rem;
+  padding: 3.5rem 0 0 0;
 }
 
 .intro-p {
@@ -50,9 +81,9 @@ p {
 }
 
 .btns {
+  display: inline-flex;
   position: absolute;
   opacity: 0;
-  padding-top: 1rem;
 }
 
 .mailLink {
@@ -62,7 +93,7 @@ p {
   font-weight: 400;
 }
 
-.contact-button {
+.resume-button {
   border: 1px;
   border-color: #033dff;
   border-radius: .5rem;
@@ -73,17 +104,13 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.35rem;
-  padding: 1.4rem 2.05rem;
-  margin-top: 2rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
   text-decoration: none;
   letter-spacing: .25rem;
   filter: drop-shadow(.25rem .25rem .5rem silver);
   overflow: hidden;
   transition: all .3s;
-}
-
-.contact-button:hover {
-  padding-right: 4.5rem;
 }
 
 button:hover {
@@ -94,20 +121,6 @@ button:hover {
 
 button:focus {
   outline: 0;
-}
-
-.far {
-  font-size: 1.5rem;
-  position: absolute;
-  margin: 3.5rem 12rem;
-  color: white;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.moveright {
-  margin: 3.65rem 13.75rem;
-  opacity: 1;
 }
 
 .recommendations-button {
@@ -121,8 +134,8 @@ button:focus {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.35rem;
-  padding: 1.4rem 2.05rem;
-  margin-top: 2rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 1.5rem;
   text-decoration: none;
   letter-spacing: .25rem;
   filter: drop-shadow(.25rem .25rem .5rem silver);
@@ -130,41 +143,78 @@ button:focus {
   transition: all .3s;
 }
 
-.portrait {
-  border-radius: 50px;
-  height: 100px;
-  margin-right: 25px;
-  width: 100px;
-  vertical-align: middle;
-}
-
-.reply-time {
-  opacity: 0;
-  padding-top: 8rem;
-}
-
-.reply-time-bold {
-  font-weight: 600;
-}
-
-.reply-time-text {
-  font-size: .95rem;
+.contact-button {
+  border: 1px;
+  border-color: #033dff;
+  border-radius: .5rem;
+  border-style: solid;
+  background-color: #033dff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 1.5rem;
   text-decoration: none;
-  color: black;
-}
-
-.reply-time-text:hover {
-  color: #033dff;
+  letter-spacing: .25rem;
+  filter: drop-shadow(.25rem .25rem .5rem silver);
+  overflow: hidden;
+  transition: all .3s;
 }
 
 /* Footer Section */
 footer {
-  top: 10%;
-  margin: 1rem auto 2rem;
+  margin: auto;
   width: 70%;
+  opacity: 0;
 }
 
 .copyright {
   color: #5e5e5e;
   font-size: .8rem;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+}
+
+/* Pre-loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 6s, visibility 2s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #033dff;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(1turn);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+  to {
+    transform: rotate(3turn);
+  }
 }
