@@ -1,0 +1,92 @@
+html, body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  opacity: 0;
+  padding-top: 6rem;
+}
+
+p {
+  color: dimgray;
+  font-size: 1.85rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 3.5rem;
+  width: 100%;
+  padding-top: 3.5rem;
+}
+
+/* Comments Section */
+.comments {
+  width: 100%;
+}
+
+.comment-container {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  width: 75%;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
+.comment-container-delay {
+  opacity: 0;
+}
+
+.comment-container .comment-photo {
+  border: 1px solid transparent;
+  border-radius: 15px;
+  height: 5rem;
+  width: 5rem;
+}
+
+.comment-container .comment-name {
+  font-size: 16px;
+  width: 100%;
+  padding: 0;
+}
+
+.comment-container .comment-text {
+  font-size: 12.5px;
+  line-height: 1.75rem;
+  padding: 0;
+}
+
+/* Footer Section */
+footer {
+  top: 10%;
+  margin: 1rem auto 2rem;
+  width: 70%;
+}
+
+.copyright {
+  color: #5e5e5e;
+  font-size: .8rem;
+}

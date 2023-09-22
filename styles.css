@@ -62,7 +62,7 @@ p {
   font-weight: 400;
 }
 
-button {
+.contact-button {
   border: 1px;
   border-color: #033dff;
   border-radius: .5rem;
@@ -82,11 +82,14 @@ button {
   transition: all .3s;
 }
 
+.contact-button:hover {
+  padding-right: 4.5rem;
+}
+
 button:hover {
   border-color: #1d51ff;
   background-color: #1d51ff;
   filter: drop-shadow(.25rem .5rem .5rem silver);
-  padding-right: 4.5rem;
 }
 
 button:focus {
@@ -105,6 +108,26 @@ button:focus {
 .moveright {
   margin: 3.65rem 13.75rem;
   opacity: 1;
+}
+
+.recommendations-button {
+  border: 1px;
+  border-color: #033dff;
+  border-radius: .5rem;
+  border-style: solid;
+  background-color: #033dff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  padding: 1.4rem 2.05rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  letter-spacing: .25rem;
+  filter: drop-shadow(.25rem .25rem .5rem silver);
+  overflow: hidden;
+  transition: all .3s;
 }
 
 .portrait {
@@ -134,9 +157,10 @@ button:focus {
   color: #033dff;
 }
 
+/* Footer Section */
 footer {
   top: 10%;
-  margin: 1rem auto 6rem;
+  margin: 1rem auto 2rem;
   width: 70%;
 }
 

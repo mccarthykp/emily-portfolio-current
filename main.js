@@ -11,6 +11,12 @@ $(document).ready(function() {
   },
   550).removeClass('hidden');
 
+  $(".comment-container-delay").delay(350).animate({
+    marginTop: "1rem",
+    opacity: "1.0",
+  },
+  550).removeClass('hidden');
+
   $(".btns").delay(450).animate({
     marginTop: "-1rem",
     opacity: "1.0",
@@ -30,7 +36,7 @@ $(document).ready(function() {
 
 var timer;
 
-$("button").hover(
+$(".contact-button").hover(
   function() {
     timer = setTimeout(function() {
         $(".far").animate({
