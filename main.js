@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".h1-primary").delay(2500).animate({
+  $(".h1-primary").delay(250).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
@@ -10,24 +10,30 @@ $(document).ready(function() {
   },
   550).removeClass('hidden');
 
-  $(".portrait").delay(2500).animate({
+  $(".portrait").delay(250).animate({
     opacity: "1.0",
   },
   550).removeClass('hidden');
 
-  $(".intro-p").delay(2500).animate({
+  $(".intro-p").delay(250).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
   550).removeClass('hidden');
 
-  $(".btns").delay(2500).animate({
+  $(".btns").delay(250).animate({
     marginTop: "-1rem",
     opacity: "1.0",
   },
   650).removeClass('hidden');
 
-  $(".primary-footer").delay(2500).animate({
+  $(".buttons-div").delay(250).animate({
+    marginTop: "-1rem",
+    opacity: "1.0",
+  },
+  650).removeClass('hidden');
+
+  $(".primary-footer").delay(250).animate({
     opacity: "1.0",
   },
   750).removeClass('hidden');
@@ -48,12 +54,6 @@ $(document).ready(function() {
     opacity: "1.0",
   },
   550).removeClass('hidden');
-
-  $(".buttons-div").delay(550).animate({
-    marginTop: "-1rem",
-    opacity: "1.0",
-  },
-  650).removeClass('hidden');
 
   $("#fcf-form").delay(650).animate({
     marginTop: "-1rem",
