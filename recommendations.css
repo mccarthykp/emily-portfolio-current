@@ -135,6 +135,10 @@ footer {
   opacity: 0;
 }
 
+.footer-header {
+  font-size: 1.15rem;
+}
+
 .footer-buttons {
   display: flex;
 }
