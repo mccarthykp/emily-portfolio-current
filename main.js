@@ -62,6 +62,12 @@ $(document).ready(function() {
   750).removeClass('hidden');
 });
 
+// Copy text to clipboard
+function copyText() {
+  navigator.clipboard.writeText
+      ("emily.weyda@gmail.com");
+}
+
 // hover(cursor enter, cursor exit)
 // setTimeout delays func exec
 // clearTimeout resets setTimeout upon hover cursor exit
