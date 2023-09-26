@@ -109,6 +109,11 @@ p {
   opacity: 0;
 }
 
+.comment-profile {
+  display: flex;
+  flex-direction: row;
+}
+
 .comment-container .comment-photo {
   border: 1px solid transparent;
   border-radius: 15px;
@@ -116,13 +121,34 @@ p {
   width: 5rem;
 }
 
-.comment-container .comment-name {
-  font-size: 16px;
-  width: 100%;
+.comment-profile-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
   padding: 0;
 }
 
-.comment-container .comment-text {
+.comment-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+.comment-role {
+  font-size: 13.5px;
+  line-height: normal;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+.comment-text {
   font-size: 12.5px;
   line-height: 1.75rem;
   padding: 0;
@@ -186,10 +212,11 @@ footer {
     z-index: 9998;
     top: 52px;
     left: 135px;
-
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid rgba(0,0,0,.72);
+    /* border-bottom: 5px solid rgba(0, 0, 0, .72); */
+    /* border-bottom: 5px solid  rgba(255, 210, 7, 0.767); */
+    border-bottom: 5px solid #ff6103;
   }
 
   &:after {
@@ -199,16 +226,17 @@ footer {
     z-index: 1;
     top: 57.5px;
     left: 125px;
-    width: 114px;
-    height: 36px;
-
-    color: #fff;
-    font-size: 10px;
+    width: 120px;
+    height: 34px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .5px;
     line-height: 36px;
-
     letter-spacing: normal;
-
-    background: rgba(0,0,0,.72);
+    /* background: rgba(0,0,0,.72); */
+    /* background: rgba(255, 210, 7, 0.767); */
+    background: #ff6103;
     border-radius: 3px;
   }
   
