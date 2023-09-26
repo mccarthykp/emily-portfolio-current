@@ -159,7 +159,7 @@ footer {
   text-decoration: none;
   letter-spacing: .125rem;
   filter: drop-shadow(.25rem .25rem .5rem silver);
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: all .3s;
 }
 
@@ -167,6 +167,65 @@ footer {
   border-color: rgba(34, 35, 32);
   background-color: rgba(34, 35, 32);
   filter: drop-shadow(.25rem .5rem .5rem silver);
+}
+
+/* Copy to clipboard tooltip */
+.copy-tooltip {
+  &:before {
+    content: '';
+    display: flex;
+    position: absolute;
+    z-index: 9998;
+    text-align: center;
+  }
+
+  &:before {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 9998;
+    top: 52px;
+    left: 135px;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0,0,0,.72);
+  }
+
+  &:after {
+    content: 'Copy to Clipboard';
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 57.5px;
+    left: 125px;
+    width: 114px;
+    height: 36px;
+
+    color: #fff;
+    font-size: 10px;
+    line-height: 36px;
+
+    letter-spacing: normal;
+
+    background: rgba(0,0,0,.72);
+    border-radius: 3px;
+  }
+  
+  &:hover {
+    
+    &:before, &:after {
+      display: block;
+    }
+  }
+  
+  &:active, &:focus {
+    outline: none;
+    
+    &:after {
+      content: 'Copied!';
+    }
+  }
 }
 
 .copy-icon-div {
