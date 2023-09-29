@@ -441,10 +441,110 @@ footer {
 
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
-  
+  .content {
+    margin: 10rem auto 3rem;
+  }
+
+  .h1-primary {
+    font-size: 2.5rem;
+  }
+
+  .portrait  {
+    height: 75px;
+    width: 75px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.75;
+  }
+
+  .buttons-div {
+    padding: 2rem 0;
+  }
+
+  .resume-button, .recommendations-button {
+    font-size: 1.125rem;
+    letter-spacing: .07125;
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem 2rem;
+  }
+
+  .recommendations-button {
+    margin: 1rem 0;
+  }
+
+  .footer-header {
+    font-size: .90rem;
+  }
+
+  .email-copy-button {
+    margin: 2rem 0;
+  }
 }
 
 /* Phone */
 @media only screen and (max-width: 767px) {
+  .content {
+    margin: 8rem auto 0;
+  }
 
+  .h1-primary {
+    font-size: 2rem;
+  }
+
+  .portrait  {
+    height: 60px;
+    width: 60px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.65;
+  }
+
+  .buttons-div {
+    padding: 1rem 0 0;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .resume-button, .recommendations-button {
+    font-size: 1rem;
+    letter-spacing: .07;
+    padding: 1rem 2rem;
+  }
+
+  .resume-button {
+    margin: 1rem 0 0;
+  }
+
+  .recommendations-button {
+    margin: 1rem 0 0 0;
+  }
+
+  .footer-header {
+    font-size: .85rem;
+  }
+
+  .email-copy-button {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+  }
+
+  .socials {
+    margin: 0 0 1rem 0;
+  }
+
+  .copyright {
+    font-size: .65rem;
+    line-height: 1.75rem;
+  }
 }
