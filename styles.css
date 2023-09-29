@@ -220,12 +220,16 @@ footer {
     position: absolute;
     z-index: 9998;
     top: 52px;
-    left: 135px;
+    left: 252.5px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     /* border-bottom: 5px solid rgba(0, 0, 0, .72); */
-    /* border-bottom: 5px solid  rgba(255, 210, 7, 0.767); */
-    border-bottom: 5px solid #ff6103;
+    /* orange */
+    border-bottom: 5px solid #fb8500;
+    /* yellow */
+    /* border-bottom: 5px solid #ffb703; */
+    /* blue */
+    border-bottom: 5px solid #0077b5;
   }
 
   &:after {
@@ -234,19 +238,23 @@ footer {
     position: absolute;
     z-index: 1;
     top: 57.5px;
-    left: 125px;
+    left: 170px;
     width: 120px;
     height: 34px;
-    color: #000000e0;
+    /* color: #000000; */
     color: #ffffff;
     font-size: 11px;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: .5px;
     /* background: rgba(0,0,0,.72); */
-    /* background: rgba(255, 210, 7, 0.767); */
-    background: #ff6103;
-    border-radius: 3px;
+    /* orange */
+    background: #fb8500;
+    /* yellow */
+    /* background: #ffb703; */
+    /* blue */
+    background: #0077b5;
+    border-radius: 4px;
   }
   
   &:hover {
