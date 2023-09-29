@@ -34,6 +34,7 @@ body {
   color: black;
 }
 
+/* Heading -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 .heading-portrait-div {
   display: flex;
   padding: 0;
@@ -61,11 +62,7 @@ body {
   opacity: 0;
 }
 
-.buttons-div {
-  opacity: 0;
-  padding: 2.5rem 0;
-}
-
+/* Intro -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 p {
   color: dimgray;
   font-size: 1.85rem;
@@ -80,17 +77,16 @@ p {
   opacity: 0;
 }
 
+/* Index buttons -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
+.buttons-div {
+  opacity: 0;
+  padding: 2.5rem 0;
+}
+
 .btns {
   display: inline-flex;
   position: absolute;
   opacity: 0;
-}
-
-.mailLink {
-  text-decoration: none;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
 }
 
 .resume-button {
@@ -143,27 +139,7 @@ button:focus {
   transition: all .3s;
 }
 
-.contact-button {
-  border: 1px;
-  border-color: #033dff;
-  border-radius: .5rem;
-  border-style: solid;
-  background-color: #033dff;
-  color: white;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.35rem;
-  padding: 1rem 2rem;
-  margin: 2rem 0 0 2.25rem;
-  text-decoration: none;
-  letter-spacing: .25rem;
-  filter: drop-shadow(.25rem .25rem .5rem silver);
-  overflow: hidden;
-  transition: all .3s;
-}
-
-/* Footer Section */
+/* Footer Section -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 footer {
   margin: auto;
   width: 70%;
@@ -422,8 +398,8 @@ footer {
   line-height: 2.5rem;
 }
 
-/* Pre-loader */
-.loader {
+/* Pre-loader -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
+/* .loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -461,5 +437,14 @@ footer {
   to {
     transform: rotate(3turn);
   }
+} */
+
+/* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
+@media only screen and (max-width: 950px) {
+  
 }
 
+/* Phone */
+@media only screen and (max-width: 767px) {
+
+}

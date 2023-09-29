@@ -4,6 +4,7 @@ $(document).ready(function() {
     opacity: "1.0",
   },
   550).removeClass('hidden');
+  
   $(".h1-recommendations").delay(250).animate({
     marginTop: "-1rem",
     opacity: "1.0",

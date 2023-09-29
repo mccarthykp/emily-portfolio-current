@@ -30,6 +30,7 @@ body {
   display: none;
 }
 
+/* Heading -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 .header-back-button-div {
   width: 75%;
   margin: auto;
@@ -90,7 +91,7 @@ p {
   padding-top: 3.5rem;
 }
 
-/* Comments Section */
+/* Comments Section -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 .comments {
   width: 100%;
 }
@@ -154,7 +155,7 @@ p {
   padding: 0;
 }
 
-/* Footer Section */
+/* Footer Section -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 footer {
   margin: 0 0 4rem 18.5rem;
   width: 70%;
@@ -411,4 +412,14 @@ footer {
   padding: 0;
   margin: 0;
   line-height: 2.5rem;
+}
+
+/* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
+@media only screen and (max-width: 950px) {
+  
+}
+
+/* Phone */
+@media only screen and (max-width: 767px) {
+
 }
