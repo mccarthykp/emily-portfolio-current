@@ -23,7 +23,7 @@ body {
 .content {
   position: relative;
   width: 70%;
-  margin: 10rem auto 5rem;
+  margin: 10rem auto 7rem;
 }
 
 .hidden {
@@ -80,7 +80,7 @@ p {
 /* Index buttons -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 .buttons-div {
   opacity: 0;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 
 .btns {
@@ -147,7 +147,7 @@ footer {
 }
 
 .footer-header {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .footer-buttons {
@@ -195,7 +195,7 @@ footer {
     display: none;
     position: absolute;
     z-index: 9998;
-    top: 52px;
+    top: 54px;
     left: 252.5px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -442,7 +442,7 @@ footer {
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
   .content {
-    margin: 10rem auto 3rem;
+    margin: 10rem auto 4.5rem;
   }
 
   .h1-primary {
@@ -457,16 +457,17 @@ footer {
   p {
     font-size: 1.5rem;
     line-height: 1.75;
+    padding: 2.5rem 0 0 0;
   }
 
   .buttons-div {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .resume-button, .recommendations-button {
     font-size: 1.125rem;
     letter-spacing: .07125;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 2.5rem 1rem 0;
     padding: 1rem 2rem;
   }
 
@@ -475,11 +476,11 @@ footer {
   }
 
   .footer-header {
-    font-size: .90rem;
+    font-size: .9rem;
   }
 
   .email-copy-button {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 }
 
@@ -494,13 +495,15 @@ footer {
   }
 
   .portrait  {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    margin-top: 4rem;
+    width: 70px;
   }
 
   p {
     font-size: 1.25rem;
     line-height: 1.65;
+    padding: 2rem 0 0 0;
   }
 
   .buttons-div {
@@ -516,7 +519,6 @@ footer {
   .resume-button, .recommendations-button {
     font-size: 1rem;
     letter-spacing: .07;
-    padding: 1rem 2rem;
   }
 
   .resume-button {
@@ -528,11 +530,11 @@ footer {
   }
 
   .footer-header {
-    font-size: .85rem;
+    display: none;
   }
 
   .email-copy-button {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
   }
 
   .footer-buttons {
@@ -540,7 +542,8 @@ footer {
   }
 
   .socials {
-    margin: 0 0 1rem 0;
+    gap: 1.5rem;
+    margin: .5rem 0 1rem 0;
   }
 
   .copyright {
