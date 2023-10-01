@@ -36,16 +36,6 @@ body {
   margin: auto;
 }
 
-.h1-recommendations {
-  color: black;
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-align: left;
-  margin: auto;
-  padding: 6rem 0;
-  opacity: 0;
-}
-
 .back-button {
   border: 1px;
   border-color: #033dff;
@@ -79,6 +69,16 @@ body {
 .arrow-back-icon {
   font-size: 1.15rem;
   padding: 0 1.15rem 0 0;
+}
+
+.h1-recommendations {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: auto;
+  padding: 6rem 0;
+  opacity: 0;
 }
 
 p {
@@ -157,13 +157,13 @@ p {
 
 /* Footer Section -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 footer {
-  margin: 0 0 4rem 18.5rem;
-  width: 70%;
+  margin: 0 auto 2rem;
+  width: 52.5%;
   opacity: 0;
 }
 
 .footer-header {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .footer-buttons {
@@ -416,10 +416,103 @@ footer {
 
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
+  .content {
+    margin: 6rem auto 0;
+    width: 90%;
+  }
+
+  .header-back-button-div {
+    width: 75%;
+  }
+
+  .back-button {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .h1-recommendations {
+    font-size: 1.75rem;
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+  }
+
+  .comment-container {
+    margin: 2rem auto;
+    width: 80%;
+  }
+
+  /* Footer Section */
+  footer {
+    margin: 5rem auto 2rem;
+    width: 72%;
+    opacity: 0;
+  }
+
+  .footer-header {
+    display: none;
+  }
+
+  .email-copy-button {
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+  }
+
+  .copy-tooltip {
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      z-index: 9998;
+      top: 54px;
+      left: 282px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      /* border-bottom: 5px solid rgba(0, 0, 0, .72); */
+      /* orange */
+      border-bottom: 5px solid #fb8500;
+      /* yellow */
+      /* border-bottom: 5px solid #ffb703; */
+      /* blue */
+      border-bottom: 5px solid #0077b5;
+    }
   
-}
+    &:after {
+      content: 'Copy to Clipboard';
+      display: none;
+      position: absolute;
+      z-index: 1;
+      top: 57.5px;
+      left: 202px;
+      width: 120px;
+      height: 34px;
+      /* color: #000000; */
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: .5px;
+      /* background: rgba(0,0,0,.72); */
+      /* orange */
+      background: #fb8500;
+      /* yellow */
+      /* background: #ffb703; */
+      /* blue */
+      background: #0077b5;
+      border-radius: 4px;
+    }
+  }
 
-/* Phone */
-@media only screen and (max-width: 767px) {
+  .socials {
+    gap: 1.5rem;
+    margin: 1rem 0 1rem 0;
+  }
 
+  .copyright {
+    font-size: .65rem;
+    line-height: 1.75rem;
+  }
 }

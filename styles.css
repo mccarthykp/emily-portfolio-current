@@ -467,6 +467,7 @@ footer {
     margin: 1rem 0;
   }
 
+  /* Footer Section */
   .footer-header {
     font-size: .9rem;
   }
@@ -521,6 +522,7 @@ footer {
     margin: 1rem 0 0 0;
   }
 
+  /* Footer Section */
   .footer-header {
     display: none;
   }
