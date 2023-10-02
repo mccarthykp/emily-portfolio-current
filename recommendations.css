@@ -22,7 +22,7 @@ body {
 
 .content {
   position: relative;
-  width: 70%;
+  width: 75%;
   margin: 10rem auto;
 }
 
@@ -93,7 +93,8 @@ p {
 
 /* Comments Section -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 .comments {
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .comment-container {
@@ -435,7 +436,7 @@ footer {
   /* Footer Section */
   footer {
     margin: 5rem auto 2rem;
-    width: 72%;
+    width: 75%;
     opacity: 0;
   }
 
