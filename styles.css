@@ -40,6 +40,10 @@ body {
   padding: 0;
 }
 
+.portrait-div {
+  margin-top: 10.5rem;
+}
+
 .h1-primary {
   color: black;
   font-weight: 700;

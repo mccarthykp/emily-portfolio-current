@@ -12,7 +12,7 @@ $(document).ready(function() {
   550).removeClass('hidden');
 
   $(".portrait").delay(250).animate({
-    marginTop: "-1rem",
+    marginTop: "-5rem",
     opacity: "1.0"
   },
   550).removeClass('hidden');
