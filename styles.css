@@ -440,10 +440,11 @@ footer {
 @media only screen and (max-width: 767px) {
   .content {
     margin: 0 auto;
+    width: 85%;
   }
 
   .h1-primary {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .portrait  {
@@ -453,7 +454,7 @@ footer {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.65;
     padding: 2rem 0 0 0;
   }
@@ -482,6 +483,10 @@ footer {
   }
 
   /* Footer Section */
+  .primary-footer {
+    width: 85%;
+  }
+
   .footer-header {
     display: none;
   }
