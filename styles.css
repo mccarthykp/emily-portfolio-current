@@ -23,7 +23,7 @@ body {
 .content {
   position: relative;
   width: 70%;
-  margin: 10rem auto 7rem;
+  margin: 0 auto 7rem;
 }
 
 .hidden {
@@ -381,7 +381,7 @@ footer {
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
   .content {
-    margin: 4.5rem auto 4.5rem;
+    margin: 2.5rem auto 4.5rem;
   }
 
   .h1-primary {
@@ -565,6 +565,24 @@ footer {
   .socials {
     gap: 1.5rem;
     margin: .5rem 0 1rem 0;
+  }
+  
+  /* GitHub Social Button */
+  .GHBG {
+    display: none;
+  }
+  
+  .github:hover {
+    background: #000000a8;
+  }
+  
+  /* LinkedIn Social Button */ 
+  .LIBG {
+    display: none;
+  }
+  
+  .linkedin:hover {
+    background: #0077B5;
   }
 
   .copyright {
