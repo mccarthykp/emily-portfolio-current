@@ -15,7 +15,7 @@ $(document).ready(function() {
     marginTop: "-5rem",
     opacity: "1.0"
   },
-  550).removeClass('hidden');
+  750).removeClass('hidden');
 
   $(".intro-p").delay(250).animate({
     marginTop: "-1rem",
