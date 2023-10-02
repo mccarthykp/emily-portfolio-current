@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(".h1-primary").delay(250).animate({
-    marginTop: "-5rem",
+    // marginTop: "-5rem",
     opacity: "1.0"
   },
   850).removeClass('hidden');
@@ -12,7 +12,7 @@ $(document).ready(function() {
   550).removeClass('hidden');
 
   $(".portrait").delay(250).animate({
-    marginTop: "-5rem",
+    // marginTop: "-5rem",
     opacity: "1.0"
   },
   750).removeClass('hidden');
