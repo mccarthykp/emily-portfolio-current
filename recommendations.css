@@ -258,9 +258,9 @@ footer {
 
 .copy-icon-div {
   display: inline-flex;
-  position: absolute;
+  position: relative;
   overflow: hidden;
-  margin-left: 16rem;
+  margin-left: 1.5rem;
 }
 
 .copy-icon {
