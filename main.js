@@ -69,28 +69,3 @@ function copyText() {
   navigator.clipboard.writeText
       ("emily.weyda@gmail.com");
 }
-
-// hover(cursor enter, cursor exit)
-// setTimeout delays func exec
-// clearTimeout resets setTimeout upon hover cursor exit
-
-// var timer;
-
-// $(".contact-button").hover(
-//   function() {
-//     timer = setTimeout(function() {
-//         $(".far").animate({
-//             opacity: "1.0"
-//           },
-//           100).addClass("moveright");
-//       },
-//     225);
-//   },
-//   function() {
-//     clearTimeout(timer);
-//     $(".far").animate({
-//         opacity: "0"
-//       },
-//     1);
-//   }
-// );
