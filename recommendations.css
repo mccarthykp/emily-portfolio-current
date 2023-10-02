@@ -417,7 +417,7 @@ footer {
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
   .content {
-    margin: 6rem auto 0;
+    margin: 0 auto;
     width: 90%;
   }
 

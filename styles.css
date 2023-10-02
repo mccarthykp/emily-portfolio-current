@@ -393,7 +393,7 @@ footer {
 /* Media queries for responsive design -~-~-~-~-~-~-~-~-~-~-~--~-~-~-~-~-~-~-~-~-~-~- */
 @media only screen and (max-width: 950px) {
   .content {
-    margin: 10rem auto 4.5rem;
+    margin: 4.5rem auto 4.5rem;
   }
 
   .h1-primary {
@@ -439,7 +439,7 @@ footer {
 /* Phone */
 @media only screen and (max-width: 767px) {
   .content {
-    margin: 8rem auto 0;
+    margin: 0 auto;
   }
 
   .h1-primary {
