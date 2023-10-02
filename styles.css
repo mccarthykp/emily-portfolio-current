@@ -186,10 +186,10 @@ footer {
   &:before {
     content: '';
     display: none;
-    position: fixed;
+    position: relative;
     z-index: 9998;
-    top: 54px;
-    left: 252.5px;
+    top: 57px;
+    left: 247.5px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid #fb8500;
@@ -199,10 +199,10 @@ footer {
   &:after {
     content: 'Copy to Clipboard';
     display: none;
-    position: fixed;
+    position: relative;
     z-index: 1;
-    top: 57.5px;
-    left: 170px;
+    top: 62.5px;
+    left: 163px;
     width: 120px;
     height: 34px;
     color: #ffffff;
@@ -213,12 +213,14 @@ footer {
     background: #fb8500;
     background: #0077b5;
     border-radius: 4px;
+    justify-content: center;
   }
   
   &:hover {
     
     &:before, &:after {
-      display: block;
+      position: absolute;
+      display: flex;
     }
   }
   
@@ -424,6 +426,40 @@ footer {
   .email-copy-button {
     margin: 1rem 0;
   }
+
+  .copy-tooltip {
+    &:before {
+      content: '';
+      display: none;
+      position: fixed;
+      z-index: 9998;
+      top: 57px;
+      left: 247px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #fb8500;
+      border-bottom: 5px solid #0077b5;
+    }
+  
+    &:after {
+      content: 'Copy to Clipboard';
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 61.5px;
+      left: 167px;
+      width: 120px;
+      height: 34px;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: .5px;
+      background: #fb8500;
+      background: #0077b5;
+      border-radius: 4px;
+    }
+  }
 }
 
 /* Phone */
@@ -498,7 +534,7 @@ footer {
       display: none;
       position: fixed;
       z-index: 9998;
-      top: 54px;
+      top: 57px;
       left: 282px;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
@@ -511,7 +547,7 @@ footer {
       display: none;
       position: fixed;
       z-index: 1;
-      top: 57.5px;
+      top: 61.5px;
       left: 202px;
       width: 120px;
       height: 34px;
