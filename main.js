@@ -46,7 +46,7 @@ $(document).ready(function() {
   750).removeClass('hidden');
 
   $(".back-button").delay(1).animate({
-    marginTop: "-1rem",
+    // marginTop: "-1rem",
     opacity: "1.0"
   },
   550).removeClass('hidden');
