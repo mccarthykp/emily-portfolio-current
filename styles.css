@@ -387,6 +387,10 @@ footer {
     font-size: 2.5rem;
   }
 
+  .portrait-div {
+    margin-top: 8rem;
+  }
+
   .portrait  {
     height: 75px;
     width: 75px;
@@ -432,6 +436,10 @@ footer {
 
   .h1-primary {
     font-size: 1.5rem;
+  }
+
+  .portrait-div {
+    margin-top: 7rem;
   }
 
   .portrait  {
