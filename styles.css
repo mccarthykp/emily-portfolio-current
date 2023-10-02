@@ -51,7 +51,7 @@ body {
   text-align: left;
   margin-bottom: 0;
   opacity: 0;
-  padding: 6rem 2.5rem 0 0;
+  padding: 10rem 2.5rem 0 0;
 }
 
 .portrait {
@@ -280,6 +280,7 @@ footer {
   display: flex;
   transition: all .3s;
   border: none;
+  z-index: inherit;
 }
 
 .GH-svgContainer {
@@ -289,7 +290,6 @@ footer {
   align-items: center;
   justify-content: center;
   background: rgba(34, 35, 32);
-  backdrop-filter: blur(0px);
   letter-spacing: 0.8px;
   border-radius: .8rem;
   transition: all .3s;
@@ -332,13 +332,11 @@ footer {
   align-items: center;
   justify-content: center;
   background: #0077B5;
-  backdrop-filter: blur(0px);
   letter-spacing: 0.8px;
   border-radius: .8rem;
   transition: all .3s;
   border: none;
   backdrop-filter: blur(4px);
-  border: none;
 }
 
 .LIBG {
@@ -351,7 +349,6 @@ footer {
   border-radius: .8rem;
   pointer-events: none;
   transition: all .3s;
-  border: none;
 }
 
 .linkedin:hover {

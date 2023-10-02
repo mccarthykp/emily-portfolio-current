@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $(".h1-primary").delay(250).animate({
-    marginTop: "-1rem",
+    marginTop: "-5rem",
     opacity: "1.0"
   },
-  550).removeClass('hidden');
+  850).removeClass('hidden');
   
   $(".h1-recommendations").delay(250).animate({
     marginTop: "-1rem",
